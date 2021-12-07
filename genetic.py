@@ -198,8 +198,9 @@ generations_arr = [x for x in range(g + 1)]
 plt.plot(generations_arr, best, label="best")
 plt.plot(generations_arr, average, label="average")
 plt.plot(generations_arr, worst, label="worst")
-plt.ylabel("Distance to 2500kcal\n(lower is better)")
+plt.ylabel(f"Distance to {CALORIES}kcal\n(lower is better)")
 plt.xlabel("Number of generations")
 plt.legend()
 plt.show()
+
 print(f"Elapsed: {e-s}")
